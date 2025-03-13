@@ -443,6 +443,93 @@ const talkSection = {
 
 // Podcast Section
 
+const achievementsSection = {
+  title: emoji("Social Responsibility 🌱"),
+  subtitle:
+    "Driven by a deep sense of purpose, dedicated to igniting hope, fostering growth, and weaving a tapestry of kindness that transcends boundaries. Each effort aims to uplift, empower, and create ripples of lasting change in the world.",
+
+  achievementssCards: [
+    {
+      title: "Science for Rural India (SFRI) - Social Services",
+      subtitle:
+        "Science for Rural India (SFRI) works to connect cutting-edge research with rural communities by sparking scientific curiosity in students through hands-on, observation-based learning. The initiative focuses on bridging the gap between rural areas and leading researchers, promoting education, and fostering innovation in underdeveloped regions. Through outreach initiatives, SFRI engages students and local populations, empowering them with knowledge and tools to address local challenges and encourage scientific exploration for sustainable development.",
+      image: require("./assets/images/sfri.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {
+      title: "IIT For Villages (IViL-IITM) - Social Services",
+      subtitle:
+        "IIT For Villages (IViL-IITM) is committed to supporting rural and remote communities by providing technical education, distributing essential products, and collaborating with NGOs to promote local development. Through outreach programs, IViL aims to bridge the gap between urban and rural areas, equipping underserved populations with the skills, resources, and knowledge needed for sustainable growth and improved living standards. The initiative focuses on making a lasting positive impact by addressing key challenges in education, infrastructure, and access to essential services.",
+      image: require("./assets/images/ivil_logo1.png"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        // {
+        //   name: "View Google Assistant Action",
+        //   url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        // }
+      ]
+    },
+
+    {
+      title: "NITIN IGNITRONIX CLUB - Education",
+      subtitle: "As an administrator of the NITIN IGNITRONIX CLUB, I led a group dedicated to hands-on learning in the field of electronics. The club focused on hardware assembly, practical electronics projects, and the creation of functional devices, providing members with real-world experience and skills. Through collaborative projects, the club aimed to enhance understanding of electronics and inspire innovation among students, equipping them with the knowledge to excel in the field.",
+      image: require("./assets/images/ignitronix.webp"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        // {name: "Certification", url: ""},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    },
+
+    {
+      title: "Summer 21 Club - Volunteering",
+      subtitle: "As a member of the Public Relations team of Summer 21 Club, I contribute to a club focused on helping members in various aspects of life, including personality development, education, socialization, entertainment, psychological support, and financial assistance. The club's motto is to expand the definition of HELP, emphasizing support within the group rather than external fundraising. We prioritize empowering members and creating a supportive community where everyone can grow together, with no distinctions based on caste, creed, religion, or color.",
+      image: require("./assets/images/summer21.jpeg"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        // {name: "Certification", url: ""},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    },
+
+    {
+      title: "Room55 Lab - Chief Hardware Officer (CHO)",
+      subtitle: "As the Chief Hardware Officer (CHO) at Room55 Lab, I lead the development of innovative hardware solutions that complement our cutting-edge digital products. Our team is dedicated to creating technology that inspires, delivering seamless user experiences and robust systems. By blending creativity, expertise, and a drive for excellence, we push the boundaries of what’s possible, partnering with visionaries to bring transformative ideas to life.",
+      image: require("./assets/images/room55.jpeg"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        // {name: "Certification", url: ""},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+// portfolio.js (or appropriate file)
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
@@ -454,29 +541,28 @@ const podcastSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
+
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  Resume:["https://drive.google.com/file/d/1iYqTXzpA_qf8L23EXCI250uWJ9EuAZKt/view?usp=drive_link"],
+  display: true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle:"Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91 7085602923",
   email_address: "rajeshmutum@iisc.ac.in",
-  display: true 
+  display: true
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  display: true // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -495,6 +581,7 @@ export {
   achievementSection,
   blogSection,
   talkSection,
+  achievementsSection,
   podcastSection,
   contactInfo,
   twitterDetails,
